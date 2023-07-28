@@ -1,11 +1,15 @@
-import React from "react";
 import { configureStore } from "@reduxjs/toolkit";
-import cartReducer from '@/app/redux/Slice/cartSlice';
+import { TypedUseSelectorHook,useDispatch,useSelector } from "react-redux";
+import {cartSlice} from "./Slice/cartSlice";
 
-const store=configureStore({
+export const store=configureStore({
     reducer:{
-        cart:cartReducer,
+        cart:cartSlice.reducer,
     },
 })
 
-export default store;
+export type RootState=ReturnType<typeof store.getState>;
+export type AppDispatch=typeof store.dispatch;
+
+export const useAppDispatch:()=>AppDispatch=useDispatch;
+export const useAppSelector:TypedUseSelectorHook<RootState>=useSelector;
