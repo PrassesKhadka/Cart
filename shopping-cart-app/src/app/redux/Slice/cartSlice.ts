@@ -43,8 +43,8 @@ const cart=createSlice({
                 }
             }
         }
-
-
-
     },
 })
+
+export const {addToCart,removeFromCart}=cart.actions;
+export default cart.reducer;
