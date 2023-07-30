@@ -1,7 +1,8 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { PayloadAction } from "@reduxjs/toolkit";
 import { Product,CartItem } from "@/app/interface/interfaces";
-
+import { RootState } from "../store";
+import { createSelector } from "@reduxjs/toolkit";
 //interface used to describe the shape of objects
 
 interface Cart
@@ -45,6 +46,14 @@ export const cartSlice=createSlice({
         }
     },
 })
+
+// Selectors defined here
+const cart=(state:RootState)=>state.cart.cartItem;
+
+export const quantitySelector=createSelector([cart,(cart,id:number)=>
+    id],(cart,id)=>
+        cart.find((element)=>
+            element.product.id===id)?.quantity)
 
 export const {addToCart,removeFromCart}=cartSlice.actions;
 export default cartSlice.reducer;
