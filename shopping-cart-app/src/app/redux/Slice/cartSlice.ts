@@ -40,8 +40,10 @@ export const cartSlice=createSlice({
                 item.quantity--;
                 if(item.quantity===0)
                 {
-                    state.cartItem.filter((value)=>value.product.id===action.payload.id)
+                    state.cartItem=state.cartItem.filter((value)=>value.product.id!=action.payload.id)
                 }
+                else 
+                    return
             }
         }
     },

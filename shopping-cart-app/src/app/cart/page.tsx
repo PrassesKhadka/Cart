@@ -6,10 +6,10 @@ import CartCard from "../components/CartCard";
 const CartPage=()=>{
     const cart=useAppSelector((state)=>
     state.cart.cartItem)
-
+    console.log(cart)
     return <div>
         {cart.map((element)=>
-            <CartCard key={element.product.id} element={element}/>
+            <CartCard element={element}/>
         )}
     </div>
 }
