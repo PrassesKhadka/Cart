@@ -55,5 +55,13 @@ export const quantitySelector=createSelector([cart,(cart,id:number)=>
         cart.find((element)=>
             element.product.id===id)?.quantity)
 
+export const totalQuantitySelector=createSelector([cart],(cart)=>{
+    return cart.reduce((total:number,element:CartItem)=>
+        (total+=element.quantity),0
+    )
+})
+
+
+
 export const {addToCart,removeFromCart}=cartSlice.actions;
 export default cartSlice.reducer;
