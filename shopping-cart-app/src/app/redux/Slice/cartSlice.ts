@@ -63,9 +63,9 @@ export const totalQuantitySelector=createSelector([cart],(cart)=>{
     )
 })
 
-export const priceOfEach=createSelector([cart],(cart)=>{
-    return 
-})
+export const totalPrice=createSelector([cart],(cart)=>{
+    return cart.reduce((total:number,value:CartItem)=>(total+=value.product.price*value.quantity),0
+)})
 
 
 export const {addToCart,removeFromCart}=cartSlice.actions;

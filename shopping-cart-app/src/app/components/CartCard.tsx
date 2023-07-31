@@ -16,7 +16,7 @@ const CartCard=(props:Props)=>{
     return <div>
                 <Image src={props.element.product.image_path} alt={props.element.product.name} width={200} height={300}/>
                 <p>{props.element.product.name}</p>   
-                <p>{props.element.product.price}</p>  
+                <p>{`${props.element.product.price} $`}</p>  
                 <div>x</div>
                 <BtnIncDec qty={props.element.quantity} onIncrease={()=>dispatch(addToCart(props.element.product))} onDecrease={()=>dispatch(removeFromCart(props.element.product))}/>
                 <div>Total price:{`${props.element.product.price * props.element.quantity} $`}</div>
