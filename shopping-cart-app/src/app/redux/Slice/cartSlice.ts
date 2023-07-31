@@ -63,6 +63,9 @@ export const totalQuantitySelector=createSelector([cart],(cart)=>{
     )
 })
 
+export const priceOfEach=createSelector([cart],(cart)=>{
+    return 
+})
 
 
 export const {addToCart,removeFromCart}=cartSlice.actions;

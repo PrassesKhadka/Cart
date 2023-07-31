@@ -10,6 +10,7 @@ interface Props
 {
     element:CartItem
 }
+//you can destructure the props like {element}:Props
 const CartCard=(props:Props)=>{
     const dispatch=useAppDispatch()    
     return <div>
@@ -18,6 +19,7 @@ const CartCard=(props:Props)=>{
                 <p>{props.element.product.price}</p>  
                 <div>x</div>
                 <BtnIncDec qty={props.element.quantity} onIncrease={()=>dispatch(addToCart(props.element.product))} onDecrease={()=>dispatch(removeFromCart(props.element.product))}/>
+                <div>Total price:{`${props.element.product.price * props.element.quantity} $`}</div>
     </div>
 }
 
