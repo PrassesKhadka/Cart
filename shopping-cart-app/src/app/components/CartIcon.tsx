@@ -5,7 +5,7 @@ import { totalQuantitySelector } from "../redux/Slice/cartSlice";
 import { useAppSelector } from "../redux/store";
 
 
-const CartPage=()=>{
+const CartIcon=()=>{
     const totalQuantity=useAppSelector(totalQuantitySelector)
     return <div>
         <ShoppingCartIcon className="w-8 h-8 text-slate-600 absolute"/>
@@ -13,4 +13,4 @@ const CartPage=()=>{
     </div>
 }
 
-export default CartPage;
+export default CartIcon;

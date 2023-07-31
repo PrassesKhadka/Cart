@@ -11,12 +11,12 @@ interface Props
 
 const BtnIncDec=(props:Props)=>{
     return <div>
-        <button onClick={props.onIncrease}>+</button>
-        <p>{props.qty}</p>
         <button onClick={props.onDecrease}>
             {props.qty===1 ? <TrashIcon className="w-4 h-6 text-red-600"/>
             : '-' }
         </button>
+        <p>{props.qty}</p>
+        <button onClick={props.onIncrease}>+</button>
     </div>
 }
 
