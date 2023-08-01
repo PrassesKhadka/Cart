@@ -8,6 +8,5 @@ export default function Home() {
     {dummyData.map((element)=>
       <ProductCard key={element.id} element={element}/>
     )}
-    {}
   </div>
 }
