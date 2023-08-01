@@ -45,7 +45,14 @@ export const cartSlice=createSlice({
                 else 
                     return
             }
-        }
+        },
+
+        clearAll:(state)=>{
+            //An empty array
+            const array:CartItem[]=[];
+            state.cartItem=array;
+        },
+
     },
 })
 
@@ -68,5 +75,5 @@ export const totalPrice=createSelector([cart],(cart)=>{
 )})
 
 
-export const {addToCart,removeFromCart}=cartSlice.actions;
+export const {addToCart,removeFromCart,clearAll}=cartSlice.actions;
 export default cartSlice.reducer;
