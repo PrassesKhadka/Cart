@@ -49,8 +49,16 @@ export const cartSlice=createSlice({
 
         clearAll:(state)=>{
             //An empty array
+            //You can empty an array by state.cartItem.length=0
+            //but do not directly change the state
             const array:CartItem[]=[];
             state.cartItem=array;
+        },
+
+        deleteForEach:(state,action:PayloadAction<Product>)=>{
+            state.cartItem=state.cartItem.filter((element)=>
+                element.product.id!=action.payload.id
+            )
         },
 
     },
@@ -75,5 +83,5 @@ export const totalPrice=createSelector([cart],(cart)=>{
 )})
 
 
-export const {addToCart,removeFromCart,clearAll}=cartSlice.actions;
+export const {addToCart,removeFromCart,clearAll,deleteForEach}=cartSlice.actions;
 export default cartSlice.reducer;

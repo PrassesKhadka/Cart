@@ -4,7 +4,7 @@ import { CartItem } from "../interface/interfaces";
 import Image from "next/image";
 import BtnIncDec from "./BtnIncDec";
 import { useAppDispatch } from "../redux/store";
-import { addToCart, removeFromCart } from "../redux/Slice/cartSlice";
+import { addToCart, deleteForEach, removeFromCart } from "../redux/Slice/cartSlice";
 
 interface Props
 {
@@ -17,7 +17,7 @@ const CartCard=(props:Props)=>{
                 <Image src={props.element.product.image_path} alt={props.element.product.name} width={200} height={300}/>
                 <p>{props.element.product.name}</p>   
                 <p>{`${props.element.product.price} $`}</p>  
-                <div>x</div>
+                <button onClick={()=>dispatch(deleteForEach(props.element.product))}>x</button>
                 <BtnIncDec qty={props.element.quantity} onIncrease={()=>dispatch(addToCart(props.element.product))} onDecrease={()=>dispatch(removeFromCart(props.element.product))}/>
                 <div>Total price:{`${props.element.product.price * props.element.quantity} $`}</div>
     </div>
