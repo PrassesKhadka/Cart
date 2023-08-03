@@ -15,8 +15,8 @@ const CartPage = () => {
       {total ? (
         cart.map((element) => <CartCard element={element} />)
       ) : (
-        <div className="text-5xl font-bold text-red-500 pb-60 bg-blue-200 flex justify-center items-center text-center ">
-          No Items to show
+        <div className="text-3xl font-semibold pb-60 flex justify-center items-center text-center  ">
+          <p>No Items to show in the cart</p>
         </div>
       )}
       <div className="relative bottom-0 text-2xl font-bold mt-4 ">

@@ -9,6 +9,7 @@ import {
   deleteForEach,
   removeFromCart,
 } from '../redux/Slice/cartSlice';
+import { TrashIcon } from '@heroicons/react/20/solid';
 
 interface Props {
   element: CartItem;
@@ -29,9 +30,6 @@ const CartCard = (props: Props) => {
         {props.element.product.name}
       </p>
       <p>{`${props.element.product.price} $`}</p>
-      <button onClick={() => dispatch(deleteForEach(props.element.product))}>
-        x
-      </button>
       <BtnIncDec
         qty={props.element.quantity}
         onIncrease={() => dispatch(addToCart(props.element.product))}
@@ -41,6 +39,12 @@ const CartCard = (props: Props) => {
         Total:
         {` ${props.element.product.price * props.element.quantity} $`}
       </div>
+      <button
+        className="text-red-500 p-1 rounded-sm shadow-xl"
+        onClick={() => dispatch(deleteForEach(props.element.product))}
+      >
+        <TrashIcon className=" w-7 h-7" />
+      </button>
     </div>
   );
 };
