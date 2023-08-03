@@ -12,14 +12,18 @@ const CartPage = () => {
   console.log(cart);
   return (
     <div className="rounded-sm shadow-xl p-3 ">
-      {cart.map((element) => (
-        <CartCard element={element} />
-      ))}
+      {total ? (
+        cart.map((element) => <CartCard element={element} />)
+      ) : (
+        <div className="text-5xl font-bold text-red-500 pb-60 bg-blue-200 flex justify-center items-center text-center ">
+          No Items to show
+        </div>
+      )}
       <div className="relative bottom-0 text-2xl font-bold mt-4 ">
         Total Price:{`  ${total} $`}
       </div>
       <button
-        className="relative bottom-0 bg-red-500 text-white rounded-sm p-1"
+        className="relative bottom-0 bg-red-500 h-full  text-white rounded-sm p-1"
         onClick={() => dispatch(clearAll())}
       >
         Clear all
