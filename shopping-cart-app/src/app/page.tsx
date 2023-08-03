@@ -1,12 +1,12 @@
 import React from 'react';
-import { dummyData } from './dummy-data/dummy';
-import ProductCard from './components/ProductCard';
-
+import Hero from './ui component/hero_page';
+import Product_Component from './ui component/product_page';
 
 export default function Home() {
-  return <div>
-    {dummyData.map((element)=>
-      <ProductCard key={element.id} element={element}/>
-    )}
-  </div>
+  return (
+    <div>
+      <Hero />
+      <Product_Component />
+    </div>
+  );
 }

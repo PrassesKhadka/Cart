@@ -13,3 +13,10 @@ pnpm dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+tailwind grid
+https://www.youtube.com/watch?v=WJDw1J7FZnE
+redux toolkit next and typescript
+https://www.youtube.com/watch?v=TMWt3sDXgXI
+shadcn with tailwind
+https://www.youtube.com/watch?v=loG4NOwbeU0

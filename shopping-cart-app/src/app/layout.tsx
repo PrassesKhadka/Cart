@@ -9,7 +9,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body><ReduxProvider><Navbar/>{children}</ReduxProvider></body>
+      <body><ReduxProvider><Navbar/><main className='px-8'>{children}</main></ReduxProvider></body>
     </html>
   )
 }
