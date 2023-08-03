@@ -15,9 +15,7 @@ const BtnIncDec = (props: Props) => {
         {props.qty === 1 ? <TrashIcon className="w-4 h-6 text-red-600" /> : '-'}
       </button>
       <p className="p-1">{props.qty}</p>
-      <button className="p-1" onClick={props.onIncrease}>
-        +
-      </button>
+      <button onClick={props.onIncrease}>+</button>
     </div>
   );
 };

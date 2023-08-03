@@ -13,7 +13,7 @@ interface Props {
 
 const ProductCard = (props: Props) => {
   return (
-    <div className="h-50 w-40 p-2  rounded-sm shadom-xl overflow-hidden bg-slate-200">
+    <div className="h-50 w-40 p-2  rounded-sm shadom-sm overflow-hidden bg-slate-100 border">
       <Image
         src={props.element.image_path}
         alt={props.element.name}

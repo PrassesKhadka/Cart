@@ -19,6 +19,7 @@ const CartPage = () => {
           <p>No Items to show in the cart</p>
         </div>
       )}
+      <hr></hr>
       <div className="relative bottom-0 text-2xl font-bold mt-4 ">
         Total Price:{`  ${total} $`}
       </div>
