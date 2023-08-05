@@ -9,7 +9,7 @@ import {
   deleteForEach,
   removeFromCart,
 } from '../redux/Slice/cartSlice';
-import { TrashIcon } from '@heroicons/react/20/solid';
+import { TrashIcon } from 'lucide-react';
 
 interface Props {
   element: CartItem;

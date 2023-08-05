@@ -1,6 +1,6 @@
 'use client';
 import React from 'react';
-import { TrashIcon } from '@heroicons/react/20/solid';
+import { TrashIcon } from 'lucide-react';
 
 interface Props {
   onIncrease: () => void;
