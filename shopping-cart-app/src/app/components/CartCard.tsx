@@ -15,19 +15,19 @@ interface Props {
   element: CartItem;
 }
 //you can destructure the props like {element}:Props
-const CartCard = (props: Props) => {
+const CartCard = (props: any) => {
   const dispatch = useAppDispatch();
   return (
     <div className="flex justify-around items-center shadow-sm rounded-sm p-2 m-4 border">
       <Image
-        src={props.element.product.image_path}
-        alt={props.element.product.name}
+        src={props.element.product.image}
+        alt={props.element.product.title}
         width={200}
         height={300}
         className="overflow-hidden shadow-sm rounded-sm"
       />
       <p className="text-xl font-semibold text-orange-500">
-        {props.element.product.name}
+        {props.element.product.title}
       </p>
       <p>{`${props.element.product.price} $`}</p>
       <BtnIncDec
