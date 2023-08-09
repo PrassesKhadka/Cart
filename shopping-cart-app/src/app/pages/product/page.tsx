@@ -1,10 +1,10 @@
 'use client';
 import React from 'react';
-import ProductCard from '../components/ProductCard';
-import { Product } from '../interface/interfaces';
-import { useAppDispatch, useAppSelector } from '../redux/store';
-import { useGetProductsQuery } from '../redux/Slice/apiSlice';
-import { setProductArray } from '../redux/Slice/productSlice';
+import ProductCard from '@/app/components/ProductCard';
+import { Product } from '@/app/interface/interfaces';
+import { useAppDispatch, useAppSelector } from '@/app/redux/store';
+import { useGetProductsQuery } from '@/app/redux/Slice/apiSlice';
+import { setProductArray } from '@/app/redux/Slice/productSlice';
 
 const Product_Component = () => {
   const dispatch = useAppDispatch();

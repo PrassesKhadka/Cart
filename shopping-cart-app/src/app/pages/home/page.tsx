@@ -1,7 +1,8 @@
 import React from 'react';
-import { Badge } from '../components/ui/ui/badge';
 import Image from 'next/image';
-import { buttonVariants } from '../components/ui/ui/button';
+// shadcn ui components
+import { Badge } from '@/app/components/ui/ui/badge';
+import { buttonVariants } from '@/app/components/ui/ui/button';
 import Link from 'next/link';
 
 const Hero = () => {

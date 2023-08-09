@@ -1,7 +1,6 @@
 'use client';
-import React, { useEffect } from 'react';
-import { useGetProductsQuery } from './redux/Slice/apiSlice';
-import Hero from './home/page';
+import React from 'react';
+import Hero from './pages/home/page';
 
 export default function Home() {
   return (

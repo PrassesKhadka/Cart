@@ -1,9 +1,9 @@
 'use client';
 import React from 'react';
-import { useAppDispatch, useAppSelector } from '../redux/store';
-import CartCard from '../components/CartCard';
-import { totalPrice } from '../redux/Slice/cartSlice';
-import { clearAll } from '../redux/Slice/cartSlice';
+import { useAppDispatch, useAppSelector } from '@/app/redux/store';
+import CartCard from '@/app/components/CartCard';
+import { totalPrice } from '@/app/redux/Slice/cartSlice';
+import { clearAll } from '@/app/redux/Slice/cartSlice';
 
 const CartPage = () => {
   const dispatch = useAppDispatch();
