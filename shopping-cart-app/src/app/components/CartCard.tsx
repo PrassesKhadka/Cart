@@ -15,7 +15,7 @@ interface Props {
   element: CartItem;
 }
 //you can destructure the props like {element}:Props
-const CartCard = (props: any) => {
+const CartCard = (props: Props) => {
   const dispatch = useAppDispatch();
   return (
     <div className="flex justify-around items-center shadow-sm rounded-sm p-2 m-4 border">
