@@ -84,4 +84,4 @@ export const totalPrice=createSelector([cart],(cart)=>{
 
 
 export const {addToCart,removeFromCart,clearAll,deleteForEach}=cartSlice.actions;
-export default cartSlice.reducer;
+export default cartSlice;

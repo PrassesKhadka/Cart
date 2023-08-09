@@ -22,7 +22,7 @@ const Hero = () => {
               wear amazon clothings
             </p>
             <Link
-              href="/cart"
+              href="/product"
               className={buttonVariants({ variant: 'outline' })}
             >
               Shop Now

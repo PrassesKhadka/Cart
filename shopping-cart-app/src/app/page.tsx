@@ -1,16 +1,12 @@
-import React from 'react';
-import Hero from './ui component/hero';
-import Product_Component from './ui component/product';
-import axios from 'axios';
-import { Product } from './interface/interfaces';
+'use client';
+import React, { useEffect } from 'react';
+import { useGetProductsQuery } from './redux/Slice/apiSlice';
+import Hero from './home/page';
 
-export default async function Home() {
-  const { data } = await axios.get('https://fakestoreapi.com/products');
-  const products: Product[] = data;
+export default function Home() {
   return (
     <div>
       <Hero />
-      <Product_Component products={products} />
     </div>
   );
 }

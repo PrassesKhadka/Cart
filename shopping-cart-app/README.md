@@ -20,3 +20,5 @@ redux toolkit next and typescript
 https://www.youtube.com/watch?v=TMWt3sDXgXI
 shadcn with tailwind
 https://www.youtube.com/watch?v=loG4NOwbeU0
+It mate pakistan youtube
+RTK query using TypeScript

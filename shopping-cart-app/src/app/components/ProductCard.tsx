@@ -1,17 +1,14 @@
 'use client';
 import React from 'react';
 import { Product } from '../interface/interfaces';
-import { addToCart, removeFromCart } from '../redux/Slice/cartSlice';
-import { useAppDispatch, useAppSelector } from '../redux/store';
 import Image from 'next/image';
 import BtnAddToCart from './BtnAddToCart';
-import { quantitySelector } from '../redux/Slice/cartSlice';
 
 interface Props {
   element: Product;
 }
 
-const ProductCard = (props: any) => {
+const ProductCard = (props: Props) => {
   return (
     <div className="h-50 w-40 p-2  rounded-sm shadom-sm overflow-hidden bg-slate-100 border">
       <Image
