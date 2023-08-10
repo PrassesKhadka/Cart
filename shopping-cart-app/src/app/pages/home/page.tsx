@@ -9,7 +9,7 @@ const Hero = () => {
   return (
     <section className="flex flex-col gap-3 py-6 lg:flex-row">
       <div className="">This is the home page</div>
-      <Link className="bg-red-500" href="/pages/product">
+      <Link className="bg-red-500" href="/pages/products">
         Shop Now
       </Link>
     </section>

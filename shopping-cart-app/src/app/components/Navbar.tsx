@@ -13,7 +13,7 @@ const Navbar = () => {
       <nav>
         <ul className="flex font-bold">
           <li className="mr-3">
-            <Link href="/">Home</Link>
+            <Link href="/pages/products">Home</Link>
           </li>
           <li className="mr-3">
             <Link href="/pages/category/electronics">Electronics</Link>
