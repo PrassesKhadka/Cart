@@ -15,7 +15,7 @@ const CartPage = () => {
       {total ? (
         cart.map((element) => <CartCard element={element} />)
       ) : (
-        <div className="text-3xl font-semibold pb-60 flex justify-center items-center text-center  ">
+        <div className="text-3xl font-semibold pb-60 flex justify-center items-center text-center min-h-[65vh] ">
           <p>No Items to show in the cart</p>
         </div>
       )}
@@ -23,6 +23,7 @@ const CartPage = () => {
       <div className="relative bottom-0 text-2xl font-bold mt-4 ">
         Total Price:{`  ${total} $`}
       </div>
+
       <button
         className="relative bottom-0 bg-red-500 h-full  text-white rounded-sm p-1"
         onClick={() => dispatch(clearAll())}

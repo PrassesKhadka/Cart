@@ -6,7 +6,7 @@ interface Props {
 }
 
 const ProductDisplay = ({ element }: Props) => {
-  return <div>{element.id}</div>;
+  return <div></div>;
 };
 
 export default ProductDisplay;
