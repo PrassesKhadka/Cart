@@ -2,15 +2,17 @@
 import React from 'react';
 import Link from 'next/link';
 import CartIcon from './CartIcon';
+import { Menu } from 'lucide-react';
 import Image from 'next/image';
 
 const Navbar = () => {
   return (
     <div className="flex justify-around items-center shadow-xl mb-2 sticky top-0 bg-slate-50">
+      <Menu className="cursor-pointer block sm:hidden" />
       <Link href="/">
         <Image src="/image_logo.png" alt="logo" width={150} height={100} />
       </Link>
-      <nav>
+      <nav className="hidden lg:block md:block">
         <ul className="flex font-bold">
           <li className="mr-3">
             <Link href="/pages/products">Home</Link>

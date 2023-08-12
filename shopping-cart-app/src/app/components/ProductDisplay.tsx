@@ -19,17 +19,17 @@ const ProductDisplay = ({ element }: Props) => {
             height={300}
             className=""
           ></Image>
-          <div className="m-2">
+          <div className="m-2 ml-12">
             <h1 className="text-3xl font-bold uppercase ">{element.title}</h1>
             <h2 className="font-feather mt-2 mb-2">{element.description}</h2>
             <h3 className="text-xl font-semibold text-green-500 mb-1">
-              Price:{element.price} $
+              Price: {element.price} $
             </h3>
             <h4 className="text-xl fon-feather uppercase text-red-500 mb-2">
               {element.category}
             </h4>
-            <h4 className="text-xl fon-feather text-blue-500 mb-2">
-              {element.rating.rate}
+            <h4 className="text-xl fon-feather text-blue-500 mb-3">
+              {element.rating.rate} ( {element.rating.count} )
             </h4>
             <BtnAddToCart element={element} />
           </div>
