@@ -8,12 +8,13 @@ import { AnimatePresence, motion } from 'framer-motion';
 
 const Navbar = () => {
   const [visible, setVisible] = useState(false);
+
   return (
     <div>
       <AnimatePresence>
         <div className="flex justify-around items-center shadow-xl mb-2 sticky top-0 bg-slate-50">
           <Menu
-            className="cursor-pointer block sm:hidden "
+            className="cursor-pointer block sm:hidden animate-bounce"
             onClick={() => {
               setVisible(!visible);
             }}
@@ -44,16 +45,14 @@ const Navbar = () => {
               </li>
             </ul>
           </nav>
-          <Link href="/pages/cart">
-            <CartIcon />
-          </Link>
+          <CartIcon />
         </div>
         {visible && (
           <motion.div
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            className="bg-slate-300 transparent min-h-[100px] min-w-full flex flex-col justify-start items-center text-xl font-extralight pt-2 "
+            className="bg-slate-100 transparent min-h-[100px] min-w-full flex flex-col justify-start items-center text-xl font-extralight pt-2 "
           >
             <Link className="pb-3" href="/pages/products">
               Home

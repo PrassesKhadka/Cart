@@ -7,11 +7,13 @@ import { createSelector } from "@reduxjs/toolkit";
 
 interface Cart
 {
-    cartItem:CartItem[];
+    cartItem:CartItem[],
+    cartVisible:boolean,
 }
 
 const initialState:Cart={
-    cartItem:[]
+    cartItem:[],
+    cartVisible:false
 }
 
 export const cartSlice=createSlice({
@@ -61,6 +63,9 @@ export const cartSlice=createSlice({
             )
         },
 
+        toggleCart:(state)=>{
+            state.cartVisible=!state.cartVisible
+        }
     },
 })
 
@@ -83,5 +88,5 @@ export const totalPrice=createSelector([cart],(cart)=>{
 )})
 
 
-export const {addToCart,removeFromCart,clearAll,deleteForEach}=cartSlice.actions;
+export const {addToCart,removeFromCart,clearAll,deleteForEach,toggleCart}=cartSlice.actions;
 export default cartSlice;

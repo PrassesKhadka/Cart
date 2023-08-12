@@ -1,7 +1,9 @@
+'use client';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import Navbar from './components/Navbar';
 import './globals.css';
 import { ReduxProvider } from './redux/Provider';
+import CartSlider from './components/CartSlider';
 
 export default function RootLayout({
   children,
@@ -17,7 +19,10 @@ export default function RootLayout({
             <h2>This website is far from complete.Working on it... </h2>
           </div>
           <Navbar />
-          <main className="px-8">{children}</main>
+          <main className="px-8">
+            <CartSlider />
+            {children}
+          </main>
         </ReduxProvider>
       </body>
     </html>
