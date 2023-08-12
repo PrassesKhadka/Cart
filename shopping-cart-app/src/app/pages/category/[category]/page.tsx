@@ -15,18 +15,21 @@ interface Object {
 
 const Category = ({ params }: Props) => {
   const { data, isLoading, isError } = useGetCategoryQuery(params.category);
+
   return (
     <div>
-      {params.category}
-      {isError && <Error />}
-      {isLoading && !isError ? (
-        <Loader />
-      ) : (
-        data &&
-        data.map((element: Product) => {
-          return <ProductCard key={element.id} element={element} />;
-        })
-      )}
+      <h1 className="text-5xl uppercase font-light p-3">{params.category}</h1>
+      <div className="m-3 p-6 grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-5">
+        {isError && <Error />}
+        {isLoading && !isError ? (
+          <Loader />
+        ) : (
+          data &&
+          data.map((element: Product) => {
+            return <ProductCard key={element.id} element={element} />;
+          })
+        )}
+      </div>
     </div>
   );
 };

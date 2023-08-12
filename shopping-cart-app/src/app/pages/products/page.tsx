@@ -18,9 +18,7 @@ const Product_Component = () => {
     <div>
       {isError && <Error />}
       {!isLoading && !isError && (
-        <h2 className="mt-10 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0">
-          Products:
-        </h2>
+        <h2 className="text-5xl uppercase font-light p-3">Products</h2>
       )}
       {isLoading && !isError ? (
         <Loader />
