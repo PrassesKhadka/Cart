@@ -8,7 +8,7 @@ import Image from 'next/image';
 const Navbar = () => {
   return (
     <div className="flex justify-around items-center shadow-xl mb-2 sticky top-0 bg-slate-50">
-      <Menu className="cursor-pointer block sm:hidden" />
+      <Menu className="cursor-pointer block sm:hidden " />
       <Link href="/">
         <Image src="/image_logo.png" alt="logo" width={150} height={100} />
       </Link>
