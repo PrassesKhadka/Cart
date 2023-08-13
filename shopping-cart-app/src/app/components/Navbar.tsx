@@ -20,7 +20,7 @@ const Navbar = () => {
             }}
           />
           <Link href="/">
-            <Image src="/image_logo.png" alt="logo" width={150} height={100} />
+            <Image src="/amazon.png" alt="logo" width={150} height={100} />
           </Link>
           <nav className="hidden lg:block md:block">
             <ul className="flex font-bold">

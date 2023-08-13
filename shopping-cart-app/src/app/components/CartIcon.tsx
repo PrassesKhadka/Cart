@@ -11,7 +11,7 @@ const CartIcon = () => {
     <div>
       <ShoppingCartIcon
         onClick={() => dispatch(toggleCart())}
-        className="w-8 h-8 text-slate-600 absolute"
+        className="w-8 h-8 text-slate-600 absolute hover:cursor-pointer"
       />
       <div className="bg-red-500 flex justify-center items-center rounded-full w-6 relative left-6 bottom-3 text-white">
         {totalQuantity}

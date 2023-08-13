@@ -26,7 +26,7 @@ const CartSlider = () => {
           >
             <div className="rounded-sm shadow-xl p-3 bg-white h-full overscroll-none">
               <X
-                className="h-10 w-5 m-6 font-bold"
+                className="h-10 w-5 m-6 font-bold hover:cursor-pointer"
                 onClick={() => dispatch(toggleCart())}
               />
               {total ? (

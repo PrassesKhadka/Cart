@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import './globals.css';
 import { ReduxProvider } from './redux/Provider';
 import CartSlider from './components/CartSlider';
+import Footer from './components/Footer';
 
 export default function RootLayout({
   children,
@@ -15,14 +16,12 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <ReduxProvider>
-          <div className="bg-black text-white flex justify-center items-center h-4 ">
-            <h2>This website is far from complete.Working on it... </h2>
-          </div>
           <Navbar />
           <main className="px-8">
             <CartSlider />
             {children}
           </main>
+          <Footer />
         </ReduxProvider>
       </body>
     </html>
