@@ -10,7 +10,7 @@ const Navbar = () => {
   const [visible, setVisible] = useState(false);
 
   return (
-    <div>
+    <div className="bg-white">
       <AnimatePresence>
         <div className="flex justify-around items-center shadow-xl mb-2 sticky top-0 bg-slate-50">
           <Menu

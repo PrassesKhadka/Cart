@@ -26,10 +26,10 @@ const CartCard = (props: Props) => {
         height={300}
         className="overflow-hidden shadow-sm rounded-sm"
       />
-      <p className="text-xl font-semibold text-orange-500">
+      <p className="text-xl font-semibold text-orange-500 truncate pl-4">
         {props.element.product.title}
       </p>
-      <p>{`${props.element.product.price} $`}</p>
+      <p className="">{`${props.element.product.price} $`}</p>
       <BtnIncDec
         qty={props.element.quantity}
         onIncrease={() => dispatch(addToCart(props.element.product))}
