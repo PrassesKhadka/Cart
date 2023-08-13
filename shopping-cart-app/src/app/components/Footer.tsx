@@ -9,9 +9,9 @@ import { LinkedinIcon } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <div className=" bottom-0  w-full h-full">
+    <div className=" bottom-0  w-full flex flex-col justify-center items-center  bg-black text-white h-[80px]">
       <div>Copyright © 2023 Prasses Khadka</div>
-      <div className=" bottom-0  w-full flex justify-center items-center bg-black text-white h-[80px] ">
+      <div className=" bottom-0  w-full flex justify-center items-center ">
         <a href="https://github.com/PrassesKhadka">
           <GithubIcon className="animate-bounce hover:animate-spin mr-3" />
         </a>
