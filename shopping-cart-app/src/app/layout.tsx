@@ -5,6 +5,7 @@ import './globals.css';
 import { ReduxProvider } from './redux/Provider';
 import CartSlider from './components/CartSlider';
 import Footer from './components/Footer';
+import Marque from './components/Marquee';
 
 export default function RootLayout({
   children,
@@ -16,6 +17,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <ReduxProvider>
+          <Marque />
           <Navbar />
           <main className="px-8">
             <CartSlider />
