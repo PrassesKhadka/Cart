@@ -11,7 +11,7 @@ const CartPage = () => {
   const cart = useAppSelector((state) => state.cart.cartItem);
   console.log(cart);
   return (
-    <div className="rounded-sm shadow-xl p-3 ">
+    <div className="rounded-sm shadow-xl p-3 min-h-screen">
       {total ? (
         cart.map((element) => <CartCard element={element} />)
       ) : (

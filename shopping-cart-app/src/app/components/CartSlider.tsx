@@ -15,7 +15,7 @@ const CartSlider = () => {
   const cart = useAppSelector((state) => state.cart.cartItem);
 
   return (
-    <div className="relative ">
+    <div className="relative z-20">
       <AnimatePresence>
         {toggle && (
           <motion.div
