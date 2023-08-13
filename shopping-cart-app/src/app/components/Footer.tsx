@@ -9,9 +9,8 @@ import { LinkedinIcon } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <div className=" bottom-0  w-full flex flex-col justify-center items-center  bg-black text-white h-[80px]">
-      <div>Copyright © 2023 Prasses Khadka</div>
-      <div className=" bottom-0  w-full flex justify-center items-center ">
+    <div className=" bottom-0   w-full flex flex-col justify-center items-center  bg-black text-white h-[80px]">
+      <div className=" bottom-0  w-full flex justify-center items-center mb-2 mt-2">
         <a href="https://github.com/PrassesKhadka">
           <GithubIcon className="animate-bounce hover:animate-spin mr-3" />
         </a>
@@ -28,6 +27,7 @@ const Footer = () => {
           <TwitterIcon className="animate-bounce hover:animate-spin mr-3" />
         </a>
       </div>
+      <div>Copyright © 2023 Prasses Khadka</div>
     </div>
   );
 };
