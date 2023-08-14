@@ -20,7 +20,10 @@ const BtnAddToCart = (props: Props) => {
   return (
     <div>
       {!qty ? (
-        <Button onClick={() => dispatch(addToCart(props.element))} className="w-full">
+        <Button
+          onClick={() => dispatch(addToCart(props.element))}
+          className="w-full bg-slate-200 hover:bg-slate-300  text-black rounded-none"
+        >
           Add To Cart
         </Button>
       ) : (

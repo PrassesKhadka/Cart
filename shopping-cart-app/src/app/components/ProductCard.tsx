@@ -11,7 +11,7 @@ interface Props {
 
 const ProductCard = (props: Props) => {
   return (
-    <div className="rounded-sm shadom-sm overflow-hidden bg-slate-100 border m-3 p-3 flex flex-col justify-end">
+    <div className="rounded-none overflow-hidden border m-3 p-3 flex flex-col justify-end bg-white">
       <Link href={`/pages/product/${props.element.id}`}>
         <Image
           src={props.element.image}

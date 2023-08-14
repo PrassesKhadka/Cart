@@ -15,12 +15,12 @@ export default function RootLayout({
   const queryClient = new QueryClient();
   return (
     <html lang="en">
-      <body>
+      <body className="xl:bg-slate-100">
         <ReduxProvider>
           <CartSlider />
           <Marque />
           <Navbar />
-          <main className="px-8 xl:ml-[10%] xl:mr-[10%] min-h-screen">
+          <main className="px-8 xl:ml-[10%] xl:mr-[10%] min-h-screen bg-slate-100">
             {children}
           </main>
           <Footer />

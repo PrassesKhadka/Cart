@@ -10,8 +10,8 @@ interface Props {
 const ProductDisplay = ({ element }: Props) => {
   return (
     <div>
-      <div className="min-h-[85vh] border-1 shadow-xl rounded-sm flex justify-center items-center">
-        <div className=" border-1 shadow-xl rounded-sm flex justify-center items-start p-3 m-4 flex-col lg:flex-row md:flex-row ">
+      <div className="min-h-[85vh] rounded-sm flex justify-center items-center">
+        <div className=" rounded-sm flex justify-center items-start p-3 m-4 flex-col lg:flex-row md:flex-row ">
           <Image
             src={element.image}
             alt={element.title}
