@@ -24,7 +24,7 @@ const CartSlider = () => {
             exit={{ opacity: 0, x: 80 }}
             className=""
           >
-            <div className="fixed right-0 top:0 p-3 bg-slate-700 text-white h-full max-w-[520px] min-w-[320px]  overflow-scroll">
+            <div className="fixed right-0 top:0 p-3 bg-slate-700 text-white h-full max-w-[425px] min-w-[320px]  overflow-scroll">
               <XOctagonIcon
                 className="fixed right-0 mr-4 font-bold text-6xl mt-4 hover:cursor-pointer "
                 onClick={() => dispatch(toggleCart())}
