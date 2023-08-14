@@ -11,7 +11,7 @@ interface Props {
 
 const ProductCard = (props: Props) => {
   return (
-    <div className="rounded-sm shadom-sm overflow-hidden bg-slate-100 border m-3 p-3">
+    <div className="rounded-sm shadom-sm overflow-hidden bg-slate-100 border m-3 p-3 flex flex-col justify-end">
       <Link href={`/pages/product/${props.element.id}`}>
         <Image
           src={props.element.image}
@@ -20,7 +20,7 @@ const ProductCard = (props: Props) => {
           height={400}
           className="w-full p-12 lg:p-5 md:p-3"
         ></Image>
-        <div className="text-2xl font-feather uppercase">
+        <div className="text-2xl font-feather uppercase truncate">
           {props.element.title}
         </div>
         <div className="text-green-600 m-2 font-bold text-2xl">{`${props.element.price} $`}</div>

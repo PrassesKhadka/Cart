@@ -18,12 +18,14 @@ const Product_Component = () => {
     <div>
       {isError && <Error />}
       {!isLoading && !isError && (
-        <h2 className="text-5xl uppercase font-light p-3">Products</h2>
+        <h2 className="text-3xl lg:text-5xl uppercase font-light p-3 flex justify-center items-center">
+          Products
+        </h2>
       )}
       {isLoading && !isError ? (
         <Loader />
       ) : (
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-5">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5">
           {product.map((element: Product) => (
             <ProductCard key={element.id} element={element} />
           ))}

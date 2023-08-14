@@ -14,7 +14,7 @@ const Navbar = () => {
       <AnimatePresence>
         <div className="flex justify-around items-center shadow-xl mb-2 sticky top-0 bg-slate-50">
           <Menu
-            className="cursor-pointer block sm:hidden animate-bounce"
+            className="cursor-pointer block sm:hidden lg:hidden xl:hidden animate-bounce"
             onClick={() => {
               setVisible(!visible);
             }}
@@ -34,14 +34,10 @@ const Navbar = () => {
                 <Link href="/pages/category/jewelery">Jewelery</Link>
               </li>
               <li className="mr-3">
-                <Link href="/pages/category/men's clothing">
-                  Men's Clothing
-                </Link>
+                <Link href="/pages/category/men's clothing">Men</Link>
               </li>
               <li className="mr-3">
-                <Link href="/pages/category/women's clothing">
-                  Womens's Clothing
-                </Link>
+                <Link href="/pages/category/women's clothing">Women</Link>
               </li>
             </ul>
           </nav>

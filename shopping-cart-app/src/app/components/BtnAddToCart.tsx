@@ -20,7 +20,7 @@ const BtnAddToCart = (props: Props) => {
   return (
     <div>
       {!qty ? (
-        <Button onClick={() => dispatch(addToCart(props.element))}>
+        <Button onClick={() => dispatch(addToCart(props.element))} className="w-full">
           Add To Cart
         </Button>
       ) : (

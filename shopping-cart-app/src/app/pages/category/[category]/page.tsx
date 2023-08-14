@@ -18,8 +18,10 @@ const Category = ({ params }: Props) => {
 
   return (
     <div>
-      <h1 className="text-5xl uppercase font-light p-3">{params.category}</h1>
-      <div className="m-3 p-6 grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-5">
+      <h1 className="flex items-center justify-center text-3xl lg:text-5xl uppercase font-light p-3 truncate">
+        {params.category}
+      </h1>
+      <div className="m-3 p-6 grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5">
         {isError && <Error />}
         {isLoading && !isError ? (
           <Loader />

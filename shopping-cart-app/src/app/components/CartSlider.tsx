@@ -15,16 +15,16 @@ const CartSlider = () => {
   const cart = useAppSelector((state) => state.cart.cartItem);
 
   return (
-    <div className="relative z-20">
+    <div className="relative z-20 min-h-full h-full overscroll-none">
       <AnimatePresence>
         {toggle && (
           <motion.div
             initial={{ opacity: 0, x: 80 }}
-            animate={{ opacity: 0.95, x: 0 }}
+            animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: 80 }}
             className="absolute w-full "
           >
-            <div className="rounded-sm shadow-xl p-3 bg-white h-full overscroll-none">
+            <div className="rounded-sm shadow-xl p-3 bg-white overscroll-none min-h-full sm:w-full md:w-[-25%]">
               <X
                 className="h-10 w-5 m-6 font-bold hover:cursor-pointer"
                 onClick={() => dispatch(toggleCart())}

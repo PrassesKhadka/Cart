@@ -17,10 +17,10 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <ReduxProvider>
+          <CartSlider />
           <Marque />
           <Navbar />
-          <main className="px-8">
-            <CartSlider />
+          <main className="px-8 xl:ml-[10%] xl:mr-[10%] min-h-screen">
             {children}
           </main>
           <Footer />
