@@ -43,7 +43,7 @@ const CartPage = () => {
         </div>
       </div>
       {/* Payment Partners right */}
-      <div className="mt-6 w-full h-full flex justify-center items-center flex-col  bg-white xl:min-h-screen xl:justify-start">
+      <div className="mt-6 w-full h-full flex justify-center items-center flex-col  bg-white xl:min-h-[50%] xl:justify-start">
         <h1 className="text-xl font-thin text-red-700">
           Our Payment Partners:
         </h1>
