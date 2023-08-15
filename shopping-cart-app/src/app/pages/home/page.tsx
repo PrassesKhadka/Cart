@@ -5,7 +5,7 @@ import { Button } from '@/app/components/ui/ui/button';
 
 const Hero = () => {
   return (
-    <section className="w-full flex flex-col md:flex-row justify-center items-center md:pt-[15%] xl:pt-[5%] xxl:pt-[5%]">
+    <section className="w-full flex flex-col md:flex-row justify-center items-center md:pt-[15%] xl:pt-[1%] xxl:pt-[1%]">
       {/* Left section */}
       <div className="w-full h-[50%] max-h-[50%] flex justify-center items-center flex-1 text-center flex-col p-5 pb-6 mt-5 md:mt-0 md:mb-0 md:pt-[10%] md:pb-[10%]">
         <div>

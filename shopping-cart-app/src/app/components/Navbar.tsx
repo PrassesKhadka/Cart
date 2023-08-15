@@ -48,7 +48,7 @@ const Navbar = () => {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            className="bg-slate-100 transparent min-h-[100px] min-w-full flex flex-col justify-start items-center text-xl font-extralight pt-2 "
+            className="bg-slate-100 transparent min-h-[100px] min-w-full flex flex-col justify-start items-center text-xl font-semibold pt-2 "
           >
             <Link className="pb-3" href="/pages/products">
               Home

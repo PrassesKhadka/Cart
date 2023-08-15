@@ -20,7 +20,7 @@ const ProductCard = (props: Props) => {
           height={400}
           className="w-full p-12 lg:p-5 md:p-3"
         ></Image>
-        <div className="text-2xl font-feather uppercase truncate">
+        <div className="text-xl font-feather uppercase truncate">
           {props.element.title}
         </div>
         <div className="text-green-600 m-2 font-bold text-2xl">{`${props.element.price} $`}</div>

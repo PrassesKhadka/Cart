@@ -4,6 +4,7 @@ import { useAppDispatch, useAppSelector } from '@/app/redux/store';
 import CartCard from '@/app/components/CartCard';
 import { totalPrice } from '@/app/redux/Slice/cartSlice';
 import { clearAll } from '@/app/redux/Slice/cartSlice';
+import { Button } from '@/app/components/ui/ui/button';
 
 const CartPage = () => {
   const dispatch = useAppDispatch();
@@ -23,13 +24,21 @@ const CartPage = () => {
       <div className="relative bottom-0 text-2xl font-bold mt-4 ">
         Total Price:{`  ${total} $`}
       </div>
-
-      <button
-        className="relative bottom-0 bg-red-500 h-full  text-white rounded-sm p-1"
-        onClick={() => dispatch(clearAll())}
-      >
-        Clear all
-      </button>
+      <div className="flex flex-col ">
+        <Button
+          className="relative bottom-0 bg-red-500 hover:bg-red-600 h-full  text-white  p-1 mb-3"
+          onClick={() => dispatch(clearAll())}
+        >
+          Clear all
+        </Button>
+        <Button
+          onClick={() => alert('Thank you for choosing us.Have a nice day!!!')}
+          className="bg-green-400 text-white hover:bg-green-500"
+        >
+          Buy Now
+        </Button>
+      </div>
+      <div className="bg-white"></div>
     </div>
   );
 };
