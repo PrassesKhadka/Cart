@@ -12,7 +12,7 @@ interface Props {
 
 const BtnIncDec = (props: Props) => {
   return (
-    <div className="flex justify-around items-center border-2 p-1 bg-purple-300">
+    <div className="flex justify-around items-center border-2 p-1">
       <button className="p-1" onClick={props.onDecrease}>
         {props.qty === 1 ? (
           <TrashIcon className="w-4 h-6 text-red-600" />
